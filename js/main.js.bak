@@ -1,0 +1,32 @@
+$(document).ready(function(){
+
+    /*  hide-show mobile menu  */
+    $("#menu_icon").click(function(){
+        $("#nav_menu").toggleClass("show_menu");
+        return false;
+    });
+
+    $(".features").hide()
+    $("#about").show()
+
+	$("#projects_button").click(function() {
+	    $(".features").hide()
+	    $("#projects").show()
+	});
+
+	$("#about_button").click(function() {
+	    $(".features").hide()
+	    $("#about").show()
+	});
+
+	$("#gpg_button").click(function() {
+	    $(".features").hide()
+	    $("#gpg").show()
+	});
+
+	$("#contact_button").click(function() {
+	    $(".features").hide()
+	    $("#contact").show()
+	});
+
+});
